@@ -10,7 +10,9 @@ return {
   config = function()
     require('neo-tree').setup {
       filesystem = {
-        follow_current_file = true,
+        follow_current_file = {
+          enabled = true,
+        },
         filtered_items = {
           visible = true,
           hide_dotfiles = false,
